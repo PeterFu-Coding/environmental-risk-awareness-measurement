@@ -32,7 +32,7 @@ It's the script for stack, which is used in place name information sheets establ
 
 # Some Necessary Files:
 ## bbd_word_country.json
-It contains names of countries in the world and their major cities, which is used in delete_lcoation.py.
+It contains names of countries in the world and their major cities, which is used in delete_lcoation.py. The file originates from https://github.com/dongrixinyu/location_detect/tree/913a5f307311319d7519cfa7dab8e5ec96f1c0ca, which has been cited in our manuscript.
 administrative_weight.json
 It helps convert administrative level to its corresponding PAI.
 ## corpus.txt
