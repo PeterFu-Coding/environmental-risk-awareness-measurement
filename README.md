@@ -40,7 +40,7 @@ It helps clear the useless locations or place names that cannot be processed for
 ### Stack.py
 It's the script for stack, which is used in place name information sheets establishment in GetLocationInfo.py.
 
-## *Some Necessary Files used in this section:*
+## *Some Necessary Files Used in this Section:*
 ### bbd_word_country.json
 It contains names of countries in the world and their major cities, which is used in delete_lcoation.py. The file originates from https://github.com/dongrixinyu/location_detect, which has been cited in our manuscript.
 administrative_weight.json
@@ -65,8 +65,18 @@ It helps generate heat maps about environmental risk awareness. The maps has bee
 It helps generate line charts about environmental risk awareness, which helps us analyse changing trends about four kinds of environmental risk awareness. The charts has been displayed in Fig.5 in our manuscript.
 ### DrawMaps/DrawWordMap.py
 It helps generate word cloud maps of the keywords that extracted the data the most. The word cloud maps has been displayed in Fig.6 in our manuscript.
-### GetCoorByERE.py
+### DrawMaps/GetCoorByERE.py
 It helps extract the coordinates of environmental risk events, which are used to draw scatter plots in ArcMap. The scatter plots have been displayed in Fig.7 in our manuscript.
+### DrawMaps/DrawLineGraphForERE.py
+It helps extract the trends of environmental risk events and display them in the form of line charts. The ERVs are normalized by the year of ERV. The chart has been displayed in Fig.8 in our manuscirpt. 
+## *Other Scripts:*
+### dataTransmission/GetDataFromdb.py
+It helps get neccessary data from database. It was used in all figure generation scripts except DrawWordMap.py.
+### PoliticalEffects.py
+It helps analyse the effects of political factors.
+## *Neccessary Files Used in this Section:*
+### DrawMaps/WordCloudData.csv
+It's the data of the word cloud maps. It contains the keywords that extracted the data the most, the amount of data and the categories of keyword. The first three columns are the results of web news and the others are the results of the academic archives. They were extracted from database through SQL.
 
 
 
