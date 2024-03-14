@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@Time ： 2023/5/17 20:04
-@Auth ： Fu Yi
-@ID ：2022202050049
-"""
-
 import pyodbc
 import json
 import numpy as np
@@ -42,7 +35,7 @@ cities = {
 }
 result = {}
 results = []
-conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=ResultNews;charset=cp936')
+conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=Your database;charset=cp936')
 cursor = conn.cursor()
 
 for province in provinces:
