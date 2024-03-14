@@ -6,42 +6,67 @@ A new methodological framework, integrating NLP techniques with web news and aca
 # Requirements
 The codes are based on Python 3.9. 
 
-# Main File Descriptions:
+# File Description
+
+## 1. Geographic Information Extraction
+
+## *Main File Descriptions:*
 The main codes for implementing the algorithm are stored in the ***GetLocationInfo.py*** script.
 In this file, detailed location information will be extracted from the text. And the whole process will be divided into four parts: location  extraction, place name information sheets establishment, provincial information sheets establishment and geoencoding.
 
-## input: 
-### Chinese news texts/Academic archives->string
+### input: 
+*Chinese news texts/Academic archives->string*
+
 the input text contains context and ten times of title. So the text should be "context"+"title"*10.
 
-## output: 
-### (1) location_coor->dataframe
+### output: 
+*(1) location_coor->dataframe*
+
 It contains the detailed geographic information in texts, including detailed and accurate place names (entire), unnormalized weights of each place name (weight) and the longitude and latitude of each place name (longitude & latitude).
-### (2) pro_pd ->dataframe
+
+*(2) pro_pd ->dataframe*
+
 It's the aggregation by province of location_coor. It contains the provinces extracted from the text and their unnormalized weights.
-### (3) confidence -> float
+
+*(3) confidence -> float*
+
 It refers the confidence that the extracted place names are the geographic information contained in the entire article.
 
-# Other Scripts:
-## LocationInfoGrasper.py
+## *Other Scripts:*
+### LocationInfoGrasper.py
 It offers three methods, which are Baidu-based geocoding, Gaode-based geocoding and obtaining detailed geographical name information from national database for geographical names of China. 
-## delete_locations.py
+### delete_locations.py
 It helps clear the useless locations or place names that cannot be processed for our research, such as place names abroad or place names beyond provincial administrations.
-## Stack.py
+### Stack.py
 It's the script for stack, which is used in place name information sheets establishment in GetLocationInfo.py.
 
-# Some Necessary Files:
-## bbd_word_country.json
+## *Some Necessary Files used in this section:*
+### bbd_word_country.json
 It contains names of countries in the world and their major cities, which is used in delete_lcoation.py. The file originates from https://github.com/dongrixinyu/location_detect, which has been cited in our manuscript.
 administrative_weight.json
 It helps convert administrative level to its corresponding PAI.
-## corpus.txt
+### corpus.txt
 It's used in word segmentation by LAC, which ensures that the words we need are not incorrectly segmented.
-## province_name_modification.json
-It helps modify the province name, making the province name complete. For example, it helps convert 湖北 (Hubei, incomplete province name)  to 湖北省 (Hubei Province, complete province name).   
-## province_to_capital.json
+### province_name_modification.json
+It helps modify the province name, making the province name complete. For example, it helps convert 北京 (Beijing, incomplete province name)  to 北京市 (Beijing City, complete province name).   
+### province_to_capital.json
 It helps convert province name to their capital's name, making it convenient to locate these provinces.
-## WebNewsSamples.csv & AcademicArchivesSamples.csv
+### WebNewsSamples.csv & AcademicArchivesSamples.csv
 Our research data samples.
 
 It includes: title, content, date (issued date), keyword/weight (weight is the ratio of the occurence of the keyword of the the sum of the occurence the keywords, but actually it's not mentioned in this research), source and id.
+
+
+## 2. Result Analysis and Figure Output
+## *Figure Generation Scirpts*
+### DrawMaps/DrawHeatMap.py
+It helps generate heat maps about environmental risk awareness. The maps has been displayed in Fig.4 in our manuscript.
+### DrawMaps/DrawLineChart.py
+It helps generate line charts about environmental risk awareness, which helps us analyse changing trends about four kinds of environmental risk awareness. The charts has been displayed in Fig.5 in our manuscript.
+### DrawMaps/DrawWordMap.py
+It helps generate word cloud maps of the keywords that extracted the data the most. The word cloud maps has been displayed in Fig.6 in our manuscript.
+### GetCoorByERE.py
+It helps extract the coordinates of environmental risk events, which are used to draw scatter plots in ArcMap. The scatter plots have been displayed in Fig.7 in our manuscript.
+
+
+
