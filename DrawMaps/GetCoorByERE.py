@@ -20,7 +20,6 @@ def GetCoorFromDatabase(keyword, source):
         sum_value = 0
         for result in results:
             sum_value += int(result['value'])
-        sum_value = sum_value/10000
         # 选出符合时间要求的数据
         ids = []
         for row in cursor.execute(sql_2):
