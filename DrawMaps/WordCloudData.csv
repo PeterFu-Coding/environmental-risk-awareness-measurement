@@ -1,0 +1,20 @@
+﻿*forest fire,4228,24,red tide,1672,23
+mudslide,5117,40,dust storm,1799,40
+forest fire,5157,24,*forest fire,1817,24
+waterlogging,5189,40,haze,1845,40
+soil pollution,5922,23,soil erosion,1888,30
+soil erosion,7578,30,desertification,2007,23
+mountain torrents,8392,40,typhoon,2148,40
+flood,8545,24,geological disasters,2254,40
+drought,9664,24,*flood,2271,24
+geological disasters,9971,40,mudslide,2362,40
+pest,10448,40,environmental pollution,2411,30
+heavy rainfall,10975,40,flood,2532,24
+climate change,11496,20,forest fire,2543,24
+typhoon,11641,40,high temperature,2615,20
+earthquake,13513,40,gale,2860,40
+environmental pollution,15450,30,pest,2888,40
+*flood,15867,24,earthquake,3113,40
+high temperature,17644,20,rainstorm,4068,24
+gale,18458,40,*drought,4185,24
+rainstorm,20339,24,climate change,4302,20
