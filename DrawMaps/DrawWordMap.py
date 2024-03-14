@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@Time ： 2023/3/9 14:29
-@Auth ： Fu Yi
-@ID ：2022202050049
-"""
 import pandas as pd
 import wordcloud as wc
 import matplotlib.pyplot as plt
@@ -38,5 +32,4 @@ if __name__ == "__main__":
     plt.imshow(w)
     plt.axis('off')
     plt.subplots_adjust(bottom=0,left=0)
-    plt.savefig('新闻媒体.png',dpi=300)
-    # w.to_file(r'学术期刊词云.png')
+    plt.savefig('***.png',dpi=300)
