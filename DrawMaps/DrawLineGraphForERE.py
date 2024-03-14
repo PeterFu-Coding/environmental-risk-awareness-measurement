@@ -1,9 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-@Time ： 2023/4/3 17:16
-@Auth ： Fu Yi
-@ID ：2022202050049
-"""
 import numpy as np
 import pyodbc
 import pandas as pd
@@ -11,7 +5,7 @@ from dataTransmission.GetDataFromdb import GetDataFromDatabase
 import matplotlib.pyplot as plt
 
 def GetCoorFromDatabase(keyword, source):
-    conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=ResultNews;charset=cp936')
+    conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=Your database;charset=cp936')
     cursor = conn.cursor()
     sql_2 =''
     temp_list = []
