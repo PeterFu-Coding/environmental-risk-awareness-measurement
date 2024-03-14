@@ -3,9 +3,9 @@ import pandas as pd
 
 
 def GetDataFromDatabase(time, btype, selected,source):
-    conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=ResultNews;charset=cp936')
+    conn = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=Your database;charset=cp936')
     cursor = conn.cursor()
-    conn2 = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=ProcessedNews;charset=cp936')
+    conn2 = pyodbc.connect('DRIVER={sql server};server=localhost\SQLEXPRESS;database=Your database;charset=cp936')
     cursor2 = conn2.cursor()
 
     points_dict = {}
