@@ -8,7 +8,7 @@ The codes are based on Python 3.9.
 
 # File Description
 
-## 1. Geographic Information Extraction
+## 1. Environmental Risk Extraction
 
 ## *Main File Descriptions:*
 The main codes for implementing the algorithm are stored in the ***GetLocationInfo.py*** script.
@@ -55,7 +55,8 @@ It helps convert province name to their capital's name, making it convenient to 
 Our research data samples.
 
 It includes: title, content, date (issued date), keyword/weight (weight is the ratio of the occurence of the keyword of the the sum of the occurence the keywords, but actually it's not mentioned in this research), source and id.
-
+### ResultExample.csv
+The example of the result of environmental risk extraction.
 
 ## 2. Result Analysis and Figure Output
 ## *Figure Generation Scirpts*
