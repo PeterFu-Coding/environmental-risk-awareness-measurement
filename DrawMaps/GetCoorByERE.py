@@ -19,7 +19,7 @@ def GetCoorFromDatabase(keyword, source):
         results = GetDataFromDatabase(time=time,btype=['生物入侵' ,'气候变化','人类活动', '自然灾害'],selected='面数据',source=source)
         sum_value = 0
         for result in results:
-            sum_value += int(result['value'])
+            sum_value += result['value']
         # 选出符合时间要求的数据
         ids = []
         for row in cursor.execute(sql_2):
