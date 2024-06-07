@@ -1,5 +1,5 @@
 # Environmental-Risk-Awareness-Measurement
-This is the data&code garbage for the article named ***"Unraveling Environmental Risk Awareness in China over Four Decades from Mass Media and Academic Archives"***.
+This is the data&code depository for the article named ***"Unraveling Environmental Risk Awareness in China over Four Decades from Mass Media and Academic Archives"***.
 
 A new methodological framework, integrating NLP techniques with web news and academic archives, to extract environmental risk awareness of people over extended periods and large spatial scales was put forward here. And by applying geographic entity and focus extraction, coupled with environmental risk quantification, we examined nearly four decades of environmental risk awareness among the Chinese.The researhch results also confirmed the validity of our methods.
 
