@@ -79,6 +79,10 @@ It helps analyse the effects of political factors.
 ### DrawMaps/WordCloudData.csv
 It's the data of the word cloud maps. It contains the keywords that extracted the data the most, the amount of data and the categories of keyword. The first three columns are the results of web news and the others are the results of the academic archives. They were extracted from database through SQL.
 
+## 3. Web crawler
+### spider2
+It helps us gain data from various platforms.
+
 # How to use these codes?
 ## 1. Environmental Risk Awareness Extraction
 You just need to call the ***Get_key_location()*** in the GetLocationInfo.py file. When you send a text into it, maybe a piece of news or an academic archive, we could get the required geographic information. By the way, all the results are stored as ResultExample.csv.
